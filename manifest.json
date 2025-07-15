@@ -1,0 +1,15 @@
+{
+	"name": "AI SEARCH DELETER",
+	"version": "0.0.1",
+	"description": "removes AI from google search",
+	"manifest_version": 3,
+	"author": "Hasan Sabri",
+	"action":{
+		"default_popup": "index.html",
+		"default_title": "AI SEARCH DELETER"
+	},
+	"content_scripts": [{
+		"matches": ["https://www.google.com/*", "https://google.com/search"],
+		"js": ["script.js"]
+	}]
+}
